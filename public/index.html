@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auth0 Example</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+
+  <body>
+    <div id="app" class="page-container page">
+      <header class="main-header">
+        <h1>Auth0 Example</h1>
+        <button id="loginBtn" onclick="login()" class="auth-invisible">
+          Login
+        </button>
+        <button id="logoutBtn" onclick="logout()" class="auth-visible hidden">
+          Logout
+        </button>
+      </header>
+
+      <main class="main-content">
+        <pre
+          class="auth-visible hidden"
+        ><code id="profile-data" class="auth-visible hidden json"></code></pre>
+      </main>
+
+      <footer class="main-footer"></footer>
+    </div>
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

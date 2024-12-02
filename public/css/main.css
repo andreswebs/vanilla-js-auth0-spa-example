@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  margin-top: 4rem;
+}
+
+.main-footer {
+  flex-shrink: 0;
+  font-size: 0.7em;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
